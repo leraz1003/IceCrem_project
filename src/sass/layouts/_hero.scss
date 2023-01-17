@@ -1,0 +1,245 @@
+.hero__container {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 12px;
+
+  background-color: $color-primary-background;
+}
+.hero__ice-cream,
+.hero__dots {
+  position: absolute;
+}
+
+.hero__button {
+  transition: border-color 300ms linear;
+  &:hover {
+    border-color: #0a8817;
+  }
+}
+
+.hero__item--color {
+  transition: color 250ms linear;
+}
+.hero__item--color:hover {
+  color: #0a8817;
+}
+.hero__item--color:focus {
+  color: #fcfcfc;
+}
+.hero__item--color:disabled {
+  color: #ababab;
+}
+@media screen and (max-width: 479px) {
+  .hero__container {
+    padding-bottom: 236px;
+  }
+  .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
+    right: 0%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__container {
+    padding-bottom: 150px;
+  }
+  .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
+    right: 0;
+  }
+  .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
+  }
+}
+.hero__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+.hero__item:not(:last-child) {
+  margin-right: 12px;
+}
+.hero__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #f8d24e;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    max-width: 247px;
+    margin-bottom: 32px;
+  }
+  .hero__title--size {
+    font-size: 34px;
+    line-height: 0.97;
+  }
+  .hero__picture,
+  .hero__text,
+  .hero__list-cafe,
+  .hero__btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hero__container {
+    padding-bottom: 12px;
+  }
+  .hero__title {
+    max-width: 247px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero__derection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hero__text {
+    max-width: 149px;
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: #fcfcfc;
+  }
+  .hero__picture {
+    margin-right: 13px;
+    z-index: 2;
+  }
+  .hero__btn {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    fill: #ffffff;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .hero__item-number {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+  }
+  .hero__item-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+
+    color: #fcfcfc;
+  }
+  .hero__item-cafe:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .hero__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .hero__list-cafe {
+    padding-top: 53px;
+  }
+  .hero__ice-cream {
+    bottom: 0;
+    right: 92px;
+    z-index: 2;
+  }
+  .hero__dots {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-bottom: 12px;
+  }
+  .hero__list {
+    position: absolute;
+    z-index: 5;
+  }
+  .hero__title {
+    max-width: 367px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .hero__item-number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.22;
+    text-align: right;
+    letter-spacing: 0.04em;
+  }
+
+  .hero__info-text {
+    margin-top: 116px;
+  }
+  .hero__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero__text {
+    max-width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-bottom: 100px;
+  }
+  .hero__btn {
+    position: absolute;
+    bottom: 80px;
+    z-index: 5;
+  }
+  .hero__dots {
+    bottom: 0;
+  }
+  .hero__ice-cream {
+    z-index: 2;
+    right: 92px;
+    bottom: 0;
+    right: 92px;
+  }
+}

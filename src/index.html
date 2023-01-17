@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ice Cream</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--slic css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- swiper styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/produts.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <div class="container gallery-review-wrap">
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer-reviews.html"></include>
+      </div>
+      <include src="./partials/contacts.html"></include>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+    <!-- modal pages -->
+    <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/about-modal.html"></include>
+    <include src="./partials/locations-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
+    <include src="./partials/products-info-modal.html"></include>
+
+    <!-- script modals -->
+    <script src="./buy-now-modal.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./franchise-modal.js"></script>
+    <script src="./modal-products-info.js"></script>
+    <script src="./buy-now-form.js"></script>
+    <script src="./franchise-form.js"></script>
+
+    <!--slick jq-->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- script slider  -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="./jss/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
+  </body>
+</html>

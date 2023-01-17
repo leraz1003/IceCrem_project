@@ -1,0 +1,115 @@
+<div
+  class="products-info products-info__backdrop is-hidden"
+  data-products-info-modal
+>
+  <div class="products-info__modal">
+    <button
+      type="button"
+      class="products-info__modal-close"
+      data-products-info-modal-close
+    >
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h1 class="modal__title">Chololate icecream</h1>
+    <div class="products-info__picture">
+      <picture>
+        <source
+          srcset="
+            ./images/products/modal/modal-ice-creame.png   1x,
+            ./images/products/modal/modal-ice-creame-2.png 2x
+          "
+        />
+        <img src="./images/products/modal/modal-ice-creame.png" alt="" />
+      </picture>
+    </div>
+
+    <ul class="products-info__list list">
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">320</h3>
+        <p class="products-info__list-text">kcal</p>
+      </li>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">4g</h3>
+        <p class="products-info__list-text">Protein...</p>
+      </li>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">8,2</h3>
+        <p class="products-info__list-text">Fats</p>
+      </li>
+      <li class="products-info__list-item">
+        <h3 class="products-info__list-title">40,4g</h3>
+        <p class="products-info__list-text">Carbs</p>
+      </li>
+    </ul>
+    <h3 class="products-info__title">Ingredients</h3>
+    <ul class="products-ingredients__list list">
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Milk</p>
+        <p class="products-ingredients__text">100ml</p>
+      </li>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Belgian chocolate</p>
+        <p class="products-ingredients__text">20g</p>
+      </li>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Cream</p>
+        <p class="products-ingredients__text">150ml</p>
+      </li>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Cocoa powder</p>
+        <p class="products-ingredients__text">30g</p>
+      </li>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Sugar</p>
+        <p class="products-ingredients__text">40g</p>
+      </li>
+      <li class="products-ingredients__item">
+        <p class="products-ingredients__text">Vanilla sugar</p>
+        <p class="products-ingredients__text">10g</p>
+      </li>
+    </ul>
+    <form class="products-info__form">
+      <div class="products-info__form-field">
+        <input
+          onkeyup="checkParamsProducts()"
+          id="Products_name"
+          type="text"
+          class="products-info__input"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="[a-zA-Z ]+"
+          title="Use only letters"
+        />
+      </div>
+      <div class="products-info__form-field">
+        <input
+          onkeyup="checkParamsProducts()"
+          id="Products_tel"
+          type="tel"
+          class="products-info__input"
+          name="phone"
+          placeholder="Phone"
+          required
+          minlength="12"
+          pattern="\+\d{12}"
+          title="+xxxxxxxxxxxx"
+        />
+      </div>
+      <div class="products-info__form-field">
+        <textarea
+          name="feedback"
+          class="products-info__textarea"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <div class="products-info__form-field">
+        <button type="submit" class="products-info__btn" id="Products_submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

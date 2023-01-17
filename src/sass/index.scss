@@ -1,0 +1,35 @@
+// base
+@import './common';
+@import './base/vars';
+@import './base/defaults';
+@import './utils/utils';
+@import './utils/mixins';
+@import './utils/placeholders';
+// components
+@import './components/pre-title';
+@import './components/title-h1';
+@import './components/title-h2';
+@import './components/button';
+@import './components/gallery-review-wrap';
+// layouts
+@import './layouts/header';
+@import './layouts/hero.scss';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+
+@import './components/gallery';
+@import './components/customer-reviews';
+
+@import './components/contacts';
+@import './components/footer';
+// layouts // madals
+@import './layouts/about-modal';
+@import './layouts/locations-modal';
+@import './layouts/modal-franchise';
+@import './layouts/modal-buy-now';
+@import './layouts/products-info-modal';
+
+// sliders-examle
+@import './layouts/slider-time';
+@import './layouts/slider-dots';
