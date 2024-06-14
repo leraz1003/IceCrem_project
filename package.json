@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Alexander0Yusov.github.io/team-proj",
+  "homepage": "https://https://github.com/leraz1003/IceCrem_project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-proj/"
+    "build": "parcel build src/*.html --public-url /IceCrem_project/"
   },
   "repository": {
     "type": "git",
