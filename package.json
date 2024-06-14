@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://https://github.com/leraz1003/IceCrem_project",
+  "homepage": "https://leraz1003.github.io/IceCrem_project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /IceCrem_project/"
